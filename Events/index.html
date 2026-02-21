@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+           <!-- one time click hoga -->
+     <!-- <button onclick="console.log('button was clicked'), alert('hlo')">Click Me!</button>  -->
+      <!-- two time click karna hoga -->
+    <!-- <button ondblclick="console.log('Click hua')">Click me 2 times</button> -->
+
+
+   <!-- mouseover -->
+    <div  style="background-color: greenyellow; height: 100px; width: 100px;">
+        This is box
+    </div>
+    <p style="background-color: rgb(58, 236, 221); height: 100px; width: 100px;">Hover</p>
+
+    <button>Click Me !</button>
+
+    <script>
+        // handle eventing in javascript
+        let div = document.querySelector("div");
+        div.addEventListener('click' , (evt)=>{ 
+            console.log("Div was Clicked")
+            console.log(evt)
+        })
+
+        // div.onclick =(e) => {    // second method to triger a event
+        //     console.log(e)
+        //     console.log(e.targetff )
+        //     console.log("Div per click hua")
+        //     let a = 25;
+        //     a++;
+        //     console.log(a)
+        // }
+
+        // hover on p tag
+         let onmouse = document.querySelector("p");
+        onmouse.onmouseover =() => {
+            console.log("inside the para d")
+        }
+        //double click karo (event) = ondbclick
+        let doubleClick = document.querySelector('button')
+        doubleClick.ondblclick =() => {
+            console.log("Do bar click karo ")
+        }
+    </script>
+</body>
+</html>
