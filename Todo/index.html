@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>My Todo List</h1>
+            
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="Add a new task..." 
+                    autocomplete="off"
+                >
+                <button id="addBtn" class="btn-add">Add</button>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <ul id="todoList" class="todo-list">
+                <!-- Todos will be added here -->
+            </ul>
+
+            <div class="todo-stats">
+                <span id="totalTodos">0 tasks</span>
+                <button id="clearBtn" class="btn-clear">Clear Completed</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
