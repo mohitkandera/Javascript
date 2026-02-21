@@ -1,0 +1,37 @@
+
+<!--
+    create a new button element , give it a text "CLick Me " , backgroundColor of red
+    & text color  of white 
+    insert the button as the first element inside the body tag
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Add the button</h1>
+    <p>How add the button </p>
+
+
+    <script>
+
+        let btn = document.createElement("btn")
+        btn.innerText = " Click Me !"
+
+        btn.style.backgroundColor = "red"
+        btn.style.color = "white"
+
+        let add = document.querySelector("body")
+        add.prepend(btn)
+       
+
+    </script>
+</body>
+</html>
