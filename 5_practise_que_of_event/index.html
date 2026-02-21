@@ -1,0 +1,35 @@
+<!-- create a toggle button that change the screen to dark mode when clicked 
+ & light -mode when clicked again -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="color:red"> Hlo , I am change the color of the body .
+        <button>CHANGE MODE</button>
+    </div>
+    <script>
+        let button = document.querySelector("button")
+        let currMode = "light"
+        button.addEventListener('click' , ()=>{
+            if(currMode == "light"){
+           currMode="dark";
+           document.querySelector("body").style.backgroundColor = "black"
+           console.log("dark")
+        }else{
+            currMode = "light"
+               console.log("light")
+             document.querySelector("body").style.backgroundColor = "white"
+        }
+        })
+
+       
+      
+      
+    </script>
+</body>
+</html>
