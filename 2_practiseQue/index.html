@@ -1,0 +1,48 @@
+<!--
+Create 3 div with common class name "box" . access them & add some
+unique text to each of them 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: aquamarine;
+            height: 100px;
+            width: 100px;
+            padding: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">one</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+   
+
+    <script>
+
+        let addtext = document.querySelectorAll('.box')
+        
+        let idx = 1;
+        for(text of addtext){
+           text.innerText = `This is box no ${idx} `
+           idx++;
+        }
+
+        // second method
+
+        // addtext[0].innerText = "This is box one";
+        // addtext[1].innerText = "This is box two";
+        // addtext[2].innerText = "This is box three";
+        // console.log(addtext)
+
+    </script>
+</body>
+</html>
