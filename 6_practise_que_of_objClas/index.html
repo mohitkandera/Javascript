@@ -1,0 +1,43 @@
+
+<!--  you are creating a website  for your college. create a classs user with 2 properties name  & email . it also has a method of viewData() that allow user to view 
+  website data .
+  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Inheritance using Classes and Objects</h1>
+
+    <script>
+
+        let DATA = "secret Information"
+
+        class user{
+            constructor(name , email){
+                this.name = name ;
+                this.email = email;
+            }
+            viewData(){
+                console.log("data = ", DATA)
+            }
+        }
+
+        let student1 = new user("Mohit" , "mohit.kandera@gmail.com");
+        let student2 = new user("Raju" , "RajputBoy@gmail.com");
+        console.log(student1) // print the student 1 data
+        console.log(student2) // print the  student 2 data
+        // console.log(student1.viewData())  // to view the data
+
+
+    </script>
+    
+</body>
+</html>
