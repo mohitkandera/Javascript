@@ -1,0 +1,55 @@
+
+<!--  
+  create a new class called Admin which inherit from user . Add a new method called 
+  editData to Admin that allow it to edit website data
+  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Inheritance using Classes and Objects</h1>
+
+    <script>
+
+        let DATA = "secret Information"
+
+        class user{
+            constructor(name , email){
+                this.name = name ;
+                this.email = email;
+            }
+            viewData(){
+                console.log("data = ", DATA)
+            }
+        }
+        class Admin extends user{
+            constructor(name , email){
+                super(name , email) // super() =  taking data from user
+            };
+                editData(){
+                    DATA = "some new value ";
+                }
+        }
+
+        // let student1 = new user("Mohit" , "mohit.kandera@gmail.com");
+        // let student2 = new user("Raju" , "RajputBoy@gmail.com");
+        // console.log(student1) // print the student 1 data
+        // console.log(student2) // print the  student 2 data
+
+        let admin1 = new Admin("admin", "admin@gmail.com");
+        console.log(admin1)
+        // console.log(student1.viewData())  // to view the data
+
+
+    </script>
+    
+</body>
+</html>
